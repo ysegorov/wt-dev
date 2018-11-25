@@ -1,0 +1,30 @@
+{
+  "name": "wt-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:watch": "chokidar css/*.css --initial --verbose -c \"npm run css:build\"",
+    "css:build": "postcss css/wt.css -o env/src/wt/docs/static/css/wt.css --verbose"
+  },
+  "author": "Yuri Egorov <ysegorov@gmail.com> (https://ysegorov.github.io/)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "chokidar-cli": "^1.2.1",
+    "cssnano": "^4.1.4",
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.0",
+    "postcss-color-function": "^4.0.1",
+    "postcss-color-hwb": "^3.0.0",
+    "postcss-css-variables": "^0.11.0",
+    "postcss-custom-properties": "^8.0.8",
+    "postcss-discard-comments": "^4.0.1",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-import": "^12.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-reporter": "^6.0.0",
+    "sanitize.css": "^8.0.0",
+    "yagni.css": "^0.3.0"
+  }
+}
