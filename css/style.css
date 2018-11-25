@@ -1,0 +1,129 @@
+
+.bg-lines {
+    /* https://www.heropatterns.com/ */
+    background-image:
+        repeating-linear-gradient(90deg, var(--white-01), var(--white-01) 2px, transparent 2px, transparent 100px),
+        repeating-linear-gradient(180deg, var(--white-01), var(--white-01) 2px, transparent 2px, transparent 100px),
+        repeating-linear-gradient(180deg, var(--white-02), var(--white-02) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(90deg, var(--white-02), var(--white-02) 1px, transparent 1px, transparent 10px);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+.bg-base-75 {
+    background-color: color(var(--color-base) a(75%));
+}
+
+.gray-192 {
+    color: var(--gray-192);
+}
+.bc-white-50 {
+    border-color: var(--white-50);
+}
+.bc-gray-192-20 {
+    border-color: color(var(--gray-192) a(20%));
+}
+.hover-white:hover,
+.hover-white:focus,
+.hover-white:active {
+    color: var(--white);
+}
+.hover-bg-blue:hover,
+.hover-bg-blue:focus,
+.hover-bg-blue:active {
+    background-color: var(--blue);
+}
+.width-49p {
+    width: 49%;
+}
+.width-900 {
+    width: var(--size-900);
+}
+.max-width-800 {
+    max-width: var(--size-800);
+}
+.min-width-700 {
+    min-width: var(--size-700);
+}
+.width-125 {
+    width: var(--size-125);
+}
+.height-125 {
+    height: var(--size-125);
+}
+.width-150 {
+    width: var(--size-150);
+}
+.height-150 {
+    height: var(--size-150);
+}
+.width-225 {
+    width: var(--size-225);
+}
+.pv-small {
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+}
+.ph-small {
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+}
+.pv-small-xl {
+    padding-top: var(--spacing-small-xl);
+    padding-bottom: var(--spacing-small-xl);
+}
+.pv-normal {
+    padding-top: var(--spacing-normal);
+    padding-bottom: var(--spacing-normal);
+}
+.ph-normal {
+    padding-left: var(--spacing-normal);
+    padding-right: var(--spacing-normal);
+}
+.wrapper {
+    line-height: 1.25;
+    font-size: var(--font-size-small-xxxl);
+}
+.wrapper a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: all .3s ease-in;
+}
+.wrapper a:hover,
+.wrapper a:focus,
+.wrapper a:active {
+    border-bottom: 1px solid currentColor;
+}
+.wrapper img {
+    max-width: 100%;
+}
+.wrapper code {
+    background-color: var(--white-10);
+    padding: 0 var(--spacing-small);
+}
+.wrapper .sidebar code {
+    padding: var(--spacing-tiny-xxl) var(--spacing-small);
+}
+.wrapper .headerlink {
+    margin-left: var(--spacing-small);
+    padding-left: var(--spacing-tiny);
+    padding-right: var(--spacing-tiny);
+    visibility: hidden;
+    font-size: .8em;
+}
+.wrapper h1:hover .headerlink,
+.wrapper h2:hover .headerlink,
+.wrapper h3:hover .headerlink,
+.wrapper h4:hover .headerlink,
+.wrapper h5:hover .headerlink,
+.wrapper h6:hover .headerlink {
+    visibility: visible;
+}
+.wrapper #changelog ~ h2 {
+    text-decoration: underline;
+    margin-top: var(--spacing-huge);
+}
+.wrapper .toc ul {
+    padding-left: var(--spacing-normal);
+}
